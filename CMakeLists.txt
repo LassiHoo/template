@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
 project(homeAutomation VERSION 1.0)
-add_executable(homeAutomation main.cpp)
 configure_file(homeAutomationConfig.h.in homeAutomationConfig.h)
+
+add_executable(homeAutomation main.cpp)
 add_subdirectory(libs/cxxopts)
 include_directories(libs/plog/include)
 target_include_directories(homeAutomation PUBLIC 
